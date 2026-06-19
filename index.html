@@ -120,44 +120,26 @@ background:white;
 padding:80px 10%;
 }
 
-form{
-max-width:700px;
+.form-container{
+max-width:900px;
 margin:auto;
-background:#fff;
-padding:40px;
+background:white;
+padding:30px;
 border-radius:20px;
 box-shadow:0 10px 30px rgba(0,0,0,.1);
+text-align:center;
 }
 
-input,
-select,
-textarea{
-width:100%;
-padding:16px;
-margin-bottom:18px;
-border:1px solid #d1d5db;
-border-radius:10px;
-font-size:16px;
-}
-
-input[type=file]{
-padding:12px;
-}
-
-button{
-width:100%;
-padding:18px;
-border:none;
-background:#0077ff;
-color:white;
+.form-container p{
 font-size:18px;
-font-weight:700;
-border-radius:10px;
-cursor:pointer;
+margin-bottom:25px;
 }
 
-button:hover{
-background:#0057cc;
+iframe{
+width:100%;
+height:1400px;
+border:none;
+border-radius:10px;
 }
 
 footer{
@@ -165,6 +147,30 @@ padding:40px;
 text-align:center;
 background:#001e42;
 color:white;
+}
+
+@media(max-width:768px){
+
+.hero{
+padding:60px 7%;
+}
+
+.hero h1{
+font-size:40px;
+}
+
+.hero p{
+font-size:18px;
+}
+
+.section-title{
+font-size:34px;
+}
+
+iframe{
+height:1600px;
+}
+
 }
 
 </style>
@@ -330,44 +336,34 @@ Protect users and platforms while ensuring policy compliance.
 
 <h2 class="section-title">Apply Today</h2>
 
-<form
-action="https://formsubmit.co/diogo.bras@teleperformance.com"
-method="POST"
-enctype="multipart/form-data">
+<div class="form-container">
 
-<input type="text" placeholder="Full Name" required>
+<p>
+Ready to start your journey in Portugal? Complete the application form below and upload your CV.
+</p>
 
-<input type="email" placeholder="Email Address" required>
+<iframe
+src="https://forms.gle/xsMdFahe8K5T4SbT9">
+Loading...
+</iframe>
 
-<input type="tel" placeholder="Phone Number">
+<br><br>
 
-<select required>
-<option value="">Current Country</option>
-<option>Spain</option>
-<option>France</option>
-<option>Germany</option>
-<option>Italy</option>
-<option>United Kingdom</option>
-<option>Brazil</option>
-<option>Other</option>
-</select>
+<a
+href="https://forms.gle/xsMdFahe8K5T4SbT9"
+target="_blank"
+class="btn">
+Open Application Form in New Tab
+</a>
 
-<input type="text" placeholder="Languages Spoken">
-
-<label><strong>Upload Your CV</strong></label>
-<input type="file" required>
-
-<textarea rows="5" placeholder="Tell us why you'd like to work in Portugal"></textarea>
-
-<button type="submit">Submit Application</button>
-
-</form>
+</div>
 
 </section>
 
 <footer>
 
 <h3>Teleperformance Portugal</h3>
+
 <p>
 Build your future. Discover Portugal. Join a global team.
 </p>
